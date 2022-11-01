@@ -2,10 +2,35 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    colors: {
+      primary: {
+        main: "#0079FF",
+        light: "#60ABFF",
+      },
+      text: {
+        primary: {
+          light: "#FFFFFF",
+          dark: "#2B3442",
+        },
+        secondary: "#4B6A9B",
+        tertiary: "#697C9A",
+      },
+      background: {
+        main: {
+          light: "#F6F8FF",
+          dark: "#141D2F",
+        },
+        paper: {
+          light: "#FEFEFE",
+          dark: "#1E2A47",
+        },
+      },
+      error: "#F74646",
+    },
     extend: {
       fontFamily: {
-        mono: ["Space Mono"]
-      }
+        mono: ["Space Mono"],
+      },
     },
   },
   plugins: [],
