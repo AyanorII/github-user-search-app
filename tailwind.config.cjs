@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
     colors: {
       primary: {
@@ -27,9 +28,12 @@ module.exports = {
       },
       error: "#F74646",
     },
+    container: {
+      center: true
+    },
     extend: {
       fontFamily: {
-        mono: ["Space Mono"],
+        mono: "Space Mono",
       },
     },
   },
