@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Container from "./components/Container";
 import Header from "./components/Header";
+import SearchUser from "./components/SearchUser";
 import { Theme } from "./lib/types";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <main className="bg-background-main-light bg-background-main-light dark:bg-background-main-dark min-w-screen min-h-screen">
         <Container>
           <Header theme={theme} toggleTheme={toggleTheme} />
+          <SearchUser />
         </Container>
       </main>
     </div>
